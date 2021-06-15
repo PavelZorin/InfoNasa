@@ -1,0 +1,38 @@
+<div class="infoEvent">
+  <h4 class="h4 padding: 10px">Event on the Earth</h4>
+  <div class="padding: 10px">A page for displaying natural phenomena that are currently occurring or were recorded earlier using The Earth Observatory Natural Event Tracker (EONET).</div>
+</div> 
+<div class="containerEvent">
+  <p class="pStyle">Indicate the number of recent events</p>
+  <form class="eventForm">
+      <input type="number" name="number" class="eventInput" placeholder="Number of recent events">
+      <button class="btn btn-primary eventBtn">Number of recent events</button>
+    </form>
+    <p class="pStyle">OR</p>
+    <p class="pStyle">Choose a natural phenomenon</p>
+    <form class="eventStartEndForm">
+      
+      <select class="selectFormEvent btn btn-warning" name="events"></p>
+        <option name="Drought" value="drought">Drought</option>
+        <option name="dustHaze" value="dustHaze">Dust and Haze</option>
+        <option name="earthquakes" value="earthquakes">Earthquakes</option>
+        <option name="floods" value="floods">Floods</option>
+        <option name="landslides" value="landslides">Landslides</option>
+        <option name="manmade" value="manmade">Manmade </option>
+        <option name="seaLakeIce" value="seaLakeIce">Sea and Lake Ice</option>
+        <option name="severeStorms" value="severeStorms">Severe Storms</option>
+        <option name="snow" value="snow">Snow </option>
+        <option name="tempExtremes" value="tempExtremes">Temperature Extremes</option>
+        <option name="volcanoes" value="volcanoes">Volcanoes </option>
+        <option name="waterColor" value="waterColor">Water Color</option>
+        <option name="wildfires" value="wildfires">Wildfires</option>
+      </select>
+      <button class="btn btn-primary eventsDatesBtn">Events</button>
+</div>
+
+  <div id="map"></div>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=${GOOGLE_MAP_API}&callback=initMap">
+  </script>
+
+  <div class="containerForEvents"></div>
